@@ -1,4 +1,4 @@
-from embedchain import App as ECApp
+from embedchain2 import App as ECApp
 import openai
 import streamlit as st
 from streamlit_chat import message

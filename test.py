@@ -40,9 +40,7 @@ if check_password():
 
     with st.sidebar:
         openai_api_key = st.secrets["OPENAI_API_KEY"]
-        "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
-        "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
-
+        
     st.title("NT - Bible GPT (by Rodrigo)")
     #openai.api_key = st.secrets.openai_api_key
     if "messages" not in st.session_state:

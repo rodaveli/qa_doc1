@@ -6,7 +6,7 @@ from streamlit_chat import message
 
 bible = ECApp()
 
-
+bible2 = ECApp()
 
 def check_password():
     """Returns `True` if the user had the correct password."""
@@ -61,7 +61,7 @@ if check_password():
         st.session_state.messages.append({"role": "user", "content": user_input})
         message(user_input, is_user=True)
         messages=st.session_state.messages
-        response = bible.query(user_input)
+        response = bible2.query(user_input)
         msg = response
         st.session_state.messages.append(msg)
         message(msg)

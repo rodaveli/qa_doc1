@@ -69,4 +69,4 @@ if check_password():
         response = bible.query(user_input)
         msg = response
         st.session_state.messages.append(msg)
-        message(msg.content)
+        message(msg)
